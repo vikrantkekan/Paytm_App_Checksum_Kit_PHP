@@ -20,6 +20,11 @@ $paramList["INDUSTRY_TYPE_ID"] = '';
 $paramList["CHANNEL_ID"] = '';
 $paramList["TXN_AMOUNT"] = '';
 $paramList["WEBSITE"] = '';
+// 3 extra parameter should have to add for valid checksum Tested for andriod API
+$paramList["EMAIL"] = '';
+$paramList["MOBILE_NO"] = '';
+$paramList["CALLBACK_URL"] = '';
+
 
 foreach($_POST as $key=>$value)
 {  
