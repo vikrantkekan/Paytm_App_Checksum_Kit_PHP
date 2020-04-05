@@ -20,9 +20,14 @@ $paramList["INDUSTRY_TYPE_ID"] = '';
 $paramList["CHANNEL_ID"] = '';
 $paramList["TXN_AMOUNT"] = '';
 $paramList["WEBSITE"] = '';
+// 3 extra parameter should have to add for valid checksum Tested for andriod API
+$paramList["EMAIL"] = '';
+$paramList["MOBILE_NO"] = '';
+$paramList["CALLBACK_URL"] = '';
+
 
 foreach($_POST as $key=>$value)
-{  
+{ 
   $pos = strpos($value, $findme);
   $pospipe = strpos($value, $findmepipe);
   if ($pos === false || $pospipe === false) 
@@ -40,5 +45,7 @@ $checkSum = getChecksumFromArray($paramList,PAYTM_MERCHANT_KEY);
   //Sample response return to SDK
  
 //  {"CHECKSUMHASH":"GhAJV057opOCD3KJuVWesQ9pUxMtyUGLPAiIRtkEQXBeSws2hYvxaj7jRn33rTYGRLx2TosFkgReyCslu4OUj\/A85AvNC6E4wUP+CZnrBGM=","ORDER_ID":"asgasfgasfsdfhl7","payt_STATUS":"1"} 
+
+
  
 ?>
