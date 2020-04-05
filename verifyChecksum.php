@@ -43,4 +43,4 @@ echo json_encode($return_array);
 
 ?>
 
-
+// remaing html code is removed
